@@ -24,6 +24,16 @@ public class DeDup {
 	 * This method will iterate the array and compare for duplicate in the new
 	 * array. Elements order guaranteed in the resultant array.
 	 * 
+	 * Pros:
+	 * 
+	 * 1. Will be more faster with less data.
+	 * 
+	 * 2. Retains original order.
+	 * 
+	 * Cons:
+	 * 
+	 * 1. Slower with more data.
+	 * 
 	 * @param inputArray
 	 * @return
 	 */
@@ -58,6 +68,18 @@ public class DeDup {
 	 * This method uses Set interface to remove duplicate. Elements order not
 	 * guaranteed in the resultant array.
 	 * 
+	 * Pros:
+	 * 
+	 * 1. Faster with large data.
+	 * 
+	 * 2. Reduce boiler plate code for iteration logic.
+	 * 
+	 * Cons:
+	 * 
+	 * 1. Slower with small data.
+	 * 
+	 * 2. Does not retain order.
+	 * 
 	 * @param inputArray
 	 * @return
 	 */
@@ -77,6 +99,21 @@ public class DeDup {
 	/**
 	 * This method uses List interface to remove duplicate by validating.
 	 * Elements order guaranteed in the resultant array.
+	 * 
+	 * Pros:
+	 * 
+	 * 1. Faster than Set (removeDuplicateUsingSet) with small data.
+	 * 
+	 * 2. Retains original order.
+	 * 
+	 * 3. Reduce boiler plate code for iteration logic.
+	 * 
+	 * Cons:
+	 * 
+	 * 1. Less efficient than Iteration logic
+	 * (removeDuplicateByInteratingAndComparing).
+	 * 
+	 * 2. Slower with large data.
 	 * 
 	 * @param inputArray
 	 * @return
